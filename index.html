@@ -1,0 +1,688 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<style>
+body{
+font-size: 18px;
+color:white;
+                    
+}
+.container{
+max-width: 1500px;
+padding: 0 10px;
+
+margin: 0 auto;
+}
+.nav{
+display: flex;
+justify-content: space-between;
+padding-top: 24px;
+align-items: center;    
+}
+html{
+box-sizing: border-box;
+                        
+}
+*{
+padding: 0;
+margin: 0;
+}
+*,*::before,*::after{
+box-sizing: inherit;
+}
+a{
+color:inherit;
+text-decoration: none;
+}
+.menu1,.menu2,.menu3{
+display: flex;
+padding-top: 10px;
+}
+.logo{
+padding: 0 160px;
+font-size: 40px;
+margin-right: 40px;
+}
+li{
+list-style-type: none;
+}
+.first-menu{
+padding-right: 25px;
+}
+.second-menu{
+padding-right: 40px;
+}
+.third-menu{
+padding-right: 32px;
+color:white;
+}
+.square1{
+                border:solid 1px;
+                background-color: white;
+                height: 4px;
+                width: 34px;
+                margin-bottom: 6px;
+            }
+            .square2{
+                border:solid 1px;
+                background-color: white;
+                height: 4px;
+                width: 26px;
+                margin-bottom: 6px;
+            }
+            .square3{
+                border:solid 1px;
+                background-color: white;
+                height: 4px;
+                width: 18px;
+                margin-bottom: 6px;
+            }
+            .squares{
+                padding-right: 70px;
+            }
+        
+        .news{
+            background-image: url("Yanki (51) 1.png"), url("Yanki (51) 2.png"), url("Yanki (51) 3.png");
+                background-position: left top,center top, right top;
+                background-size: 40%;
+         
+                background-repeat: no-repeat;
+        }
+        header{
+
+    position: absolute;
+        right: 0;
+        left: 0;
+    }
+            .min-promo{
+                min-height: 100vh;
+            }
+            .nets{
+                text-align: center;
+            padding-top: 500px;
+            }
+        .net1{
+            font-weight: 300;
+            line-height: 54px;
+            opacity: 0.85;
+            font-size: 46px;
+            border-bottom: 1px solid white;
+            padding-bottom: 20px;
+        }
+        .net2{
+            padding-top: 41px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+        .chapter-title{
+    color:#252525;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+        }
+    .photoes{
+        position: relative;
+        display: flex;
+
+    }
+    .name1{
+        position: absolute;
+bottom: 0;
+text-align: center;
+        color:white;
+        text-align: center;
+        background-color: #e0bea2cf;
+        width: 274px;
+     font-size: 20px;
+    
+        padding: 15px 0px;
+    }
+   .color-back{
+ 
+    background-size: 1500000px;
+    margin-right: 15px;
+
+   }
+   .ph{
+    padding-bottom: 50px;
+    padding-left: 200px;
+   }
+   .chapter-title2{
+    color:black;
+    font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+padding-bottom: 50px;
+   }
+ .text-content{
+    color:rgba(0, 0, 0, 0.681);
+    max-width: 600px;
+    max-height: 30px;
+    font-size: 16px;
+ }
+ .info .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+ }
+ #email{
+   display: flex;
+   justify-content: center;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    border:1px solid silver;
+    font-size: 16px;
+ }
+
+ .infos{
+    padding-left: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+ }
+ .footer{
+    padding-left: 520px;
+ }
+ #btn{
+    margin-bottom: 20px;
+    width: 600px;
+    height: 50px;
+    background-color: 
+#E0BEA2;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color:#FFFFFF;
+border:none;
+ }
+tr ,td{
+    color:black;
+
+}
+td{
+    padding-right: 47px;
+   padding-bottom: 10px;
+}
+.tabl{
+    padding-left: 250px;
+}
+.tabl , .names{
+ 
+    color:rgba(0, 0, 0, 0.471);
+    flex-basis: 700px;
+    border-collapse: collapse;
+    font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+}
+.menu-mobile ,.menu-btn{
+ display: none;  
+}
+@media(min-width:1281){
+    .photoes{
+        padding-left: -100px;
+    }
+}
+@media(max-width:1280px){
+.news{
+    width: 1340px;
+}
+.photoes{
+    padding-left: 40px;
+}
+}
+
+@media(max-width:1162px){
+    body{
+font-size: 10px;  
+           
+} 
+.news{
+height: 1000px;
+}
+.ph{
+    margin-top: -70px;
+}
+.chapter-title{
+    margin-left: 100px;
+}
+.photoes{
+    padding-left: 100px;
+}
+.img-first{
+    width:200px;
+    padding-right: 50px;
+}   
+
+.name1{
+    font-size: 16px;
+ padding: 0;
+ margin: 0;
+width: 150px;
+position: absolute;
+padding-left: 5px;
+}  
+.logo{
+    font-size: 25px;
+}
+
+}
+@media(max-width:1100px) and (min-width:1000px){
+.nav{
+    padding-left: 200px;
+}
+.chapter-title2{
+padding-left: 360px;
+}
+.footer{
+    padding-left: 390px;
+}
+}
+@media(max-width:992px){
+.menu1,.menu2,.menu3{
+    display: none;
+}
+
+.news{
+            background-image: url("Yanki (51) 1.png"), url("Yanki (51) 2.png"), url("Yanki (51) 3.png");
+                background-position: left top,center top, right top;
+                background-size: 40%;
+                width: 1500px;
+                background-repeat: no-repeat;
+        }
+
+.logo{
+    padding: 0;
+}
+.nav{
+    width: 1500px;
+}
+.img-first{
+    width: 270px;
+}
+.name1{
+    width: 220px;
+    font-size: 30px;
+}
+
+.photoes{
+    padding-left: 90px;
+}
+.tab{
+    padding-left: 200px;
+}
+.chapter-title2{
+    padding-left: 500px;
+}
+.footer{
+    padding-left: 200px;
+}
+.ph{
+    padding-left: 100px;
+}
+}
+
+@media(max-width:768px){
+    .nav{
+    width: 1420px;
+}
+
+.news{
+    width: 1430px;
+}
+.chapter-title2{
+    padding-left: 400px;
+    font-size: 50px;
+   
+    width: 70px;
+   
+    white-space: nowrap;
+}
+#email{
+    width: 900px;
+    height: 100px;
+}
+#btn{
+    width: 900px;
+    height: 100px;
+}
+.infos{
+    padding-left: 270px;
+}
+.text-content{
+    padding-left: 290px;
+    margin-bottom: 400px;
+    font-size: 30px;
+}
+td{
+    font-size: 35px;
+line-height: 40px;
+}
+.names{
+    font-size: 30px;
+}
+.footer{
+    padding-left: 70px;
+}
+.text-content{
+display: none;    
+}
+}
+@media(max-width:576px){
+.nav{
+    width: 1950px;
+}
+    .news{
+        width: 220vh;
+height: 270%;
+background-image: url("Yanki (51) 1.png");
+background-position: center top;
+background-size: cover;
+background-repeat: no-repeat;
+        }
+        .nets{
+    padding-top: 1250px;
+   
+}
+.net1{
+    font-size: 70px;
+}
+.net2{
+    font-size: 40px;
+
+}
+.logo{
+    font-size: 60px;
+}
+.square1{
+    height: 15px;
+     width: 70px;
+}
+.square2{
+    height: 12px;
+     width:60px;
+}
+.square3{
+    height: 12px;
+     width: 50px;
+}
+.photoes{
+    display: flex;
+    flex-direction: column;
+padding-left: 500px;
+
+}
+.chapter-title{
+    font-size: 90px;
+    padding:150px 520px;
+  
+}
+.img-first{
+    width: 900px;
+    margin-bottom: 20px;
+}
+.chapter-title2{
+ display: none;
+}
+#email{
+    width: 1400px;
+    height: 200px;
+    font-size: 70px;
+}
+#btn{
+    width: 1400px;
+    height: 200px;
+    font-size: 70px;
+
+}
+.text-content{
+    display: none;
+}
+.infos{
+    padding-left: 250px;
+}
+td{
+ display: none;
+}
+
+}
+@media(max-width:414px){
+    .nav{
+    width: 1650px;
+    
+}
+.photoes{
+    display: flex;
+    flex-direction: column;
+padding-left: 250px;
+
+}
+.infos{
+    padding-left: 100px;
+}
+.square1{
+width: 90px;
+height: 20px;
+}
+.square2{
+width: 70px;
+height: 20px;
+}
+.square3{
+width: 50px;
+height: 20px;
+}
+.chapter-title{
+    padding-left: 300px;
+}
+}
+@media(max-width:400px){
+
+    .news{
+        width: 200vh;
+height: 270%;
+background-image: url("Yanki (51) 1.png");
+background-position: center top;
+background-size: cover;
+background-repeat: no-repeat;
+        }
+        .nav{
+    width: 1430px;
+}
+.chapter-title2{
+    padding-left: 550px;
+}
+.chapter-title{
+    padding-left: 250px;
+}
+.infos{
+    padding-left: 20px;
+}
+.photoes{
+    padding-left: 190px;
+}
+}
+@media(max-width:300px){
+    .news{
+        width: 170vh;
+height: 270%;
+background-image: url("Yanki (51) 1.png");
+background-position: center top;
+background-size: cover;
+background-repeat: no-repeat;
+        }
+        .nav{
+    width: 1150px;
+}
+.photoes{
+    display: flex;
+    flex-direction: column;
+padding-left: 40px;
+
+}
+.chapter-title2{
+    padding-left: 350px;
+}
+.infos{
+    padding-left: 90px;
+}
+.chapter-title{
+    padding-left: 100px;
+}
+#email{
+    width: 900px;
+}
+#btn{
+    width: 900px;
+}
+}
+                    </style>
+<body>
+                    
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <div class="squares">
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="square3"></div>
+
+            </div>
+          
+            <ul class="menu1">
+                <li class="first-menu"><a href="">NEW</a></li>
+                <li class="first-menu"><a href="">КАТАЛОГ</a></li>
+                <li class="first-menu"><a href="">О НАС</a></li>
+            </ul>
+            <div class="logos">
+                <p class="logo"><a href="">YANKI</a></p>
+            </div>
+         
+            <ul class="menu2">
+                <li class="second-menu"><a href="">RU&nbspᐯ</a></li>
+                <li class="second-menu"><a href="">UAH&nbspᐯ</a></li>
+                
+            </ul>
+            <ul class="menu3">
+                <li class="third-menu"><a href="">🔎</a></li>
+                <li class="third-menu"><a href="">♡</a></li>
+                <li class="third-menu"><a href="">⍜</a></li>
+                <li class="third-menu"><a href="">&#128722</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <section class="news">
+        <div class="promo__inner">
+            <div class="min-promo">
+                <div class="nets">
+                <p><a href="" class="net1">Новая коллекция</a></p>
+                <p class="net2"><a href="" class="net2">Смотреть новинки&nbsp></a></p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+<section class="ph">
+    <div class="container">
+        <div class="part part-first">
+            <h2 class="chapter-title">Категории</h2>
+            <div class="photoes">
+                <div class="color-back">
+                <p class="name1">куртки</p>
+                
+                <img class="img-first"src="Rectangle 11.jpg" alt="">
+            </div>
+            <div class="color-back">
+                <p class="name1">пальто</p>
+                
+                <img class="img-first"src="Rectangle 10.png" alt="">
+            </div>
+            <div class="color-back">
+                <p class="name1">шубы</p>
+                
+                <img class="img-first"src="Rectangle 7.png" alt="">
+            </div>
+            <div class="color-back">
+                <p class="name1">парки</p>
+                
+                <img class="img-first"src="Rectangle 9 (2).png" alt="">
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="info">
+    <div class="container">
+        <h3 class="chapter-title2">Узнайте  первым о новинках</h3>
+        <div class="infos">
+
+        <input id="email" type="text" placeholder="Ваш Email">
+        <input id="btn"type="submit" value="подписаться">
+        <p class="text-content">Нажимая на кнопку «Подписаться», я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями конфиденциальности.
+        </p>
+        </div>
+    </div>
+
+</section>
+ 
+
+</main>
+<footer class="footer">
+<div class="container">
+    <div class="tab">
+<table class="tabl">
+<tr><td class="names">компания</td>
+<td class="names">полезное</td>
+<td class="names">покупателю</td>
+<td class="names">КОНТАКТЫ</td>
+
+</tr>
+
+<tr><td>о нас</td>
+    <td>Оплата и доставка </td>
+    <td>избранное</td>
+    <td>+38(073) 096 36 44</td>
+    
+    </tr>
+
+    <tr><td>контакты</td>
+        <td>Условия возврата</td>
+        <td>Публичная оферта</td>
+        <td>info@yanki.com</td>
+        
+        </tr>
+
+        <tr><td></td>
+            <td>Политика конфиденциальности</td>
+           <td>Бонусная система</td>
+            </tr>
+        
+
+</table>
+</div>
+</div>
+
+
+</footer>
+</body>
+</html>
